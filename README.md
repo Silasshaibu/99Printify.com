@@ -1,1 +1,1 @@
-This a demo site for personalised products to be printed on demand.
+This a site for personalized products to be printed on demand.
