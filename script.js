@@ -50,3 +50,30 @@ orderButton.addEventListener('click', function() {
   console.log('Inscription:', inscriptionText);
   alert('Your order has been placed!'); // Display a confirmation message
 });
+
+// ... (previous code)
+
+// Define the image file mappings for each color combination
+const imageMappings = {
+  'blue_white': 'blue_white.jpg',
+  'green_black': 'green_black.jpg',
+  'pink_silver': 'pink_silver.jpg',
+  // Add more mappings as needed for all possible combinations
+};
+
+// Function to update the water bottle preview image based on the selected color combination
+function updatePreview() {
+  const selectedCombination = `${selectedBodyColor}_${selectedLidColor}`;
+  const imageFileName = imageMappings[selectedCombination];
+
+  if (imageFileName) {
+    // Set the background image of the preview div
+    waterBottlePreview.style.backgroundImage = `url(${imageFileName})`;
+  } else {
+    // If no image mapping is found, show a default image or a blank background
+    waterBottlePreview.style.backgroundImage = 'none';
+  }
+}
+
+// ... (previous code)
+
