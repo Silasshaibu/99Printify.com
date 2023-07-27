@@ -8,5 +8,35 @@
 </head>
 <body>
 
+  <div class="container">
+    <h1>Personalized Water Bottle Configurator</h1>
+    <div class="preview">
+      <div id="water-bottle" class="water-bottle"></div>
+    </div>
+    <div class="options">
+      <label for="body-color">Select Body Color:</label>
+      <select id="body-color">
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="pink">Pink</option>
+        <!-- Add more color options as needed -->
+      </select>
+
+      <label for="lid-color">Select Lid Color:</label>
+      <select id="lid-color">
+        <option value="white">White</option>
+        <option value="black">Black</option>
+        <option value="silver">Silver</option>
+        <!-- Add more color options as needed -->
+      </select>
+
+      <label for="inscription">Inscription:</label>
+      <input type="text" id="inscription" placeholder="Enter your inscription here...">
+
+      <button id="order-button">Order</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
